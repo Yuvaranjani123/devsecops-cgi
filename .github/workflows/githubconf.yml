@@ -6,7 +6,8 @@ on:
       - main
     paths:
      # - "hello.java" # Only Hello.Java File
-      - "**.java" 
+    #  - "**.java" 
+       - "!index.html"
  # schedule:
    # - cron: "0/5 * * * *"
 
