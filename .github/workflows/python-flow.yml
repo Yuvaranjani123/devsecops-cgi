@@ -1,6 +1,11 @@
 name: Python Workflow Demo
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "hello.py"
 
 jobs:
   Execute:
