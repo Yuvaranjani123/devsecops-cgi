@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - "hello.java" # Only Hello.Java File
+     # - "hello.java" # Only Hello.Java File
+      - "**.java" 
  # schedule:
    # - cron: "0/5 * * * *"
 
