@@ -15,7 +15,6 @@ jobs:
       - name: Testing Steps
         run: |
           echo "Testing Job Getting Executed"
-          ls building.txt
           sleep 10
   deployment: 
     runs-on: ubuntu-latest
