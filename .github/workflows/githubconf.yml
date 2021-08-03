@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-    paths:
-       - "hello.java" # Only Hello.Java File
+    #paths:
+     #  - "hello.java" # Only Hello.Java File
       # - "**.java" # Any Java File
       # - "!index.html" # Except this file, any other file changes, trigger the Job
     paths-ignore:
