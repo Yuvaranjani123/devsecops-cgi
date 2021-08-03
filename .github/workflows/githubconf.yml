@@ -7,7 +7,10 @@ on:
     paths:
        - "hello.java" # Only Hello.Java File
       # - "**.java" # Any Java File
-       - "!index.html" # Except this file, any other file changes, trigger the Job
+      # - "!index.html" # Except this file, any other file changes, trigger the Job
+    paths-ignore:
+       - "index.html"
+     
  # schedule:
    # - cron: "0/5 * * * *"
 
