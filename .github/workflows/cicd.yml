@@ -20,7 +20,7 @@ jobs:
   deployment: 
     runs-on: ubuntu-latest
     if: always()
-    needs: [build, testing]
+    needs: [testing]
     steps:
       - name: Deployment Steps
         run: |
