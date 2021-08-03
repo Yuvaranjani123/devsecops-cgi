@@ -12,4 +12,4 @@ jobs:
    - name: List the folders
      run: ls ${{github.workspace}}
    - name: run java
-     run: java hello
+     run: java HelloWorld
