@@ -12,5 +12,7 @@ jobs:
   needs: Build
   steps: 
    - uses: actions/checkout@v2
-   - name: run java
+   - name: compile java
      run: javac hello.java
+   - name: run jave
+     run: java hello
