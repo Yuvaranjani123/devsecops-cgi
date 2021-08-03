@@ -1,0 +1,28 @@
+  
+name: Conditional Jobs Workflow
+on: [push]
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Steps
+        run: |
+          echo "Build Job Getting Executed"
+          
+  testing: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing Steps
+        run: |
+          echo "Testing Job Getting Executed"
+          ls building.txt
+          sleep 10
+  deployment: 
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [build, testing]
+    steps:
+      - name: Deployment Steps
+        run: |
+          echo "Deployment Job Getting Executed"
+          sleep 10
