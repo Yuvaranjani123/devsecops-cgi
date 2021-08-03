@@ -11,8 +11,9 @@ jobs:
   runs-on: ubuntu-latest
   needs: Build
   steps: 
-   - uses: actions/checkout@v2
    - name: compile java
      run: javac hello.java
-   - name: run jave
+   - name: List the folders
+     run: ls ${{github.workspace}}
+   - name: run java
      run: java hello
