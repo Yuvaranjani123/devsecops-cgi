@@ -1,0 +1,11 @@
+ame: HTML Page Deployment Installation
+
+on: push
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - run: sudo scp -o StrictHostKeyChecking=no -v nishanth.html -P ${{secrets.PASSWORD}} ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/var/www/html/
